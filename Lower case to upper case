@@ -1,0 +1,33 @@
+//https://practice.geeksforgeeks.org/problems/lower-case-to-upper-case3410/0/?problemStatus=unsolved&page=1&query=problemStatusunsolvedpage1
+Lower case to upper case 
+// toupper(char) convert the lower case to upper case. 
+//str.length() .length() function give the length of the string in C++.
+// case coonveration depend on ASCi value 
+//ASCII values for lower case alphabets (a-z):97 – 122
+//ASCII values for upper case alphabets (A-Z):65 – 92
+
+Code :
+string to_upper(string str){
+    //code
+    string str1="",str2="";
+    for(int i=0;i<str.length();i++)
+    {
+        str2=toupper(str[i]);
+        str1=str1+str2;
+    }
+       
+    return(str1);
+}
+
+// tolower() function convert the upper case to lower case.
+string to_upper(string str){
+    //code
+    string str1="",str2="";
+    for(int i=0;i<str.length();i++)
+    {
+        str2=tolower(str[i]);
+        str1=str1+str2;
+    }
+       
+    return(str1);
+}
