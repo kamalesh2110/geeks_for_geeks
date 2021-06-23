@@ -1,0 +1,24 @@
+  ******************Find minimum and maximum element in an array****************
+
+//https://practice.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
+
+//topic :: array, structure (limit header may be used for good understanding):::
+
+struct pair p1;
+
+struct pair getMinMax(long long int arr[], long long int n) {
+    
+    long long int x,y;
+    x=arr[0];
+    y=arr[0];
+    for(int i=1;i<n;i++)
+    {
+        if(x<arr[i])
+            x=arr[i];
+        if(y>arr[i])
+            y=arr[i];
+    }
+    p1.max=x;
+    p1.min=y;
+    return p1;
+}
